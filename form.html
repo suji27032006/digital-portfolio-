@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admission Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		
+		.form {
+			width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		
+		.form label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.form input[type="text"], .form input[type="date"], .form input[type="tel"], .form select {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.form textarea {
+			width: 100%;
+			height: 100px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.form input[type="submit"] {
+			width: 200px;
+			height: 40px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.form input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="form">
+		<h1>Admission Form</h1>
+		<form>
+			<!-- Personal Details -->
+			<h2>Personal Details</h2>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name">
+			
+			<label for="date_of_birth">Date of Birth:</label>
+			<input type="date" id="date_of_birth" name="date_of_birth">
+			
+			<label for="gender">Gender:</label>
+			<select id="gender" name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+			
+			<!-- Contact Details -->
+			<h2>Contact Details</h2>
+			<label for="address">Address:</label>
+			<textarea id="address" name="address"></textarea>
+			
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone">
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+			
+			<!-- Educational Background -->
+			<h2>Educational Background</h2>
+			<label for="qualification">Qualification:</label>
+			<select id="qualification" name="qualification">
+				<option value="high_school">High School</option>
+				<option value="diploma">Diploma</option>
+				<option value="degree">Degree</option>
+			</select>
+			
+			<label for="institution">Institution:</label>
+			<input type="text" id="institution" name="institution">
+			
+			<!-- Submit Button -->
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
